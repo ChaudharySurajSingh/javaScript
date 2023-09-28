@@ -1,0 +1,36 @@
+
+In JavaScript, primitive data types (such as Number, String, Boolean, Null, and Undefined) don't have methods of their own because they are not objects. However, JavaScript allows you to access certain built-in properties and methods for primitives by automatically converting them to their corresponding object wrappers (Number, String, Boolean) when necessary. This process is called "boxing" or "autoboxing."
+Number methods:
+
+toFixed(numDigits): Converts a number to a string, keeping a specified number of decimal places.
+toPrecision(precision): Converts a number to a string, with a specified total number of digits.
+toString(base): Converts a number to a string with the specified base (e.g., binary, octal, hexadecimal).
+String methods:
+
+length: Returns the length of the string.
+
+toUpperCase():
+Converts the string to uppercase.
+
+toLowerCase():
+Converts the string to lowercase.
+
+charAt(index):
+Returns the character at the specified index.
+
+indexOf(searchValue, fromIndex):
+Returns the index of the first occurrence of the specified search value in the string.
+
+substring(startIndex, endIndex):
+Returns a new substring from the specified start index (inclusive) to the end index (exclusive).
+
+split(separator):
+Splits the string into an array of substrings based on the specified separator.
+
+Boolean methods:
+Since Boolean is a primitive with only two possible values (true and false), it does not have any methods of its own.
+
+Null and Undefined:
+Since these represent the absence of meaningful values, they don't have any methods either.
+
+Keep in mind that when you use these methods, JavaScript will temporarily convert the primitive to an object wrapper, but it will not change the original primitive itself. Once the method execution is complete, the object wrapper is discarded.

@@ -11,12 +11,12 @@ console.log(person1)
 
 
 /* creating instance of object:
-in this method we create inctance(on=bject) for object by using new keyword that create an empty object and then we assign the properties */
+in this method we create instance(object) for object constructor  by using new keyword that create an empty object and then we assign the properties */
 let myobj = new Object();
 myobj.name = 'john';
 myobj.age = 25;
 myobj.occupation = 'engineer';
-console.log('---------- BY CREATING INSTACE OF OBJECT --------------');
+console.log('---------- BY CREATING INSTANCE OF OBJECT --------------');
 console.log(myobj);
 
 
@@ -27,7 +27,7 @@ function person2(name,age,occupation) {
     this.age=age;
     this.occupation=occupation; 
 }
-let person = new person2('john',25,'engineer');//creating inctance of function
+let person = new person2('john',25,'engineer');//creating instance of function
 console.log('---------- constructor function --------------');
 console.log(person);
 

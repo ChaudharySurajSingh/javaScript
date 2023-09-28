@@ -1,4 +1,5 @@
-var array=[5757,"hey there  am array",["i am array of array",{id:674654,mail:"xyz@gmail.com"}],5591];
-array.forEach(element => {
-    console.log(element);
-});
+let arr = [1,2,3,4,5,6,7,8,9,10];
+let array = arr.map(function(ele){
+    return ele*ele;
+})
+console.log(array);

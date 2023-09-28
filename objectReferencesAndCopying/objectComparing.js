@@ -2,14 +2,19 @@
 let object1 ={
 name:"suraj singh",
 profession:"Engineering",
-age:22
+age:22,
+status:"false"
 };
 let object2 ={
-    name: "suraj singh",
+    name: "ruchima singh",
     profession: "Engineering",
-    age: 22
+    age: 22,
+    sallery:64646
 }
 console.log(object1==object2);// false even both object have same properties (but have a different memory lacation)
+console.log(object1);
+Object.assign(object1,object2);//object copy to any existing object only consider the diffrence
+console.log(object1);
 
 let object3 = object1;//referencing object1 to another object
 

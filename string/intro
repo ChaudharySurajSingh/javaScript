@@ -1,0 +1,4 @@
+string are the sequence of charactors that represent text
+string are used to store and manuplate the textual data 
+string can contain any sequence of charactors
+string are immutable that means thay cannot be modified once created

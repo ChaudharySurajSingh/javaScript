@@ -30,5 +30,5 @@ console.log(intro.post?.());//accessing method that is not exist
 
 
 //// accessing the property without optional chaining '?.' now access the property that is not exist
-console.log(intro.user.experience.year);//cause an error
-console.log(intro.user.skill.language[6]);//accessing the index element of the array property that is not exist
+console.log(intro.user.experience?.year);//cause an error
+console.log(intro.ron?.skill.language?.[6]);//accessing the index element of the array property that is not exist
