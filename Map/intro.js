@@ -1,4 +1,4 @@
-/*map are the advance alternate of the object that allow to store key value pair each value can be any type or each value can be any type */
+/*map are the advance alternate of the object that allow to store key value pair each key can be any type or each value can be any type */
 
 
 //creation of map directly 

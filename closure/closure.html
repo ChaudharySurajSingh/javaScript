@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tech implementation</title>
+    <style>
+      body {
+        background-color: #414141;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="dark">Dark</button>
+    <button id="green">Green</button>
+    <script>
+      const clickHandler = (color) => {
+        return () => {
+          document.body.style.backgroundColor = color; // Changed from 'bgColor' to 'backgroundColor'
+        };
+      };
+      const handler = clickHandler(); // Changed from 'clickHandle' to 'clickHandler'
+      document.getElementById("dark").onclick = clickHandler("black"); // Changed from 'handler("#fff")' to 'clickHandler("#fff")'
+      document.getElementById("green").onclick = clickHandler("green");
+    </script>
+  </body>
+</html>

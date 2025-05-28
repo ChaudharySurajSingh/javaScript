@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event propagation</title>
+</head>
+<body>
+    <div id="first">
+        <a href="">first</a>
+        <div id="second">
+            <a href="">second</a>
+            <div id="third">
+                <a href="">third</a>
+                <div id="main"><button>click me</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('button').addEventListener('click',(e)=>{
+        window.alert('button clicked');
+        console.log(e.currentTarget);
+    });
+    document.querySelector('#third').addEventListener('click',(e)=>{
+       window.alert('third clicked');
+       console.log(e.currentTarget);
+    });
+    document.querySelector('#second').addEventListener('click',(e)=>{
+       window.alert('second clicked');
+       console.log(e.currentTarget);
+    });
+    document.querySelector('#first').addEventListener('contextmenu',(e)=>{
+        window.alert('first clicked');
+        console.log(e.currentTarget);
+    });
+</script>
+</html>

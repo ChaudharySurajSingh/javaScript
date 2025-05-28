@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Background Color Changer</title>
+    <style>
+        #suraj {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>random color color-changer</h1>
+    <h3>click the start button to see the magic</h3>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div id="suraj"></div>
+    <script>
+        const start = document.getElementById('start');
+        const stop = document.getElementById('stop');
+        const me = document.getElementById('suraj');
+        const colorchanger = function () {
+            let color_C = '#';
+            let letters = '0123456789ABCDEF';
+            for (let i = 0; i < 6; i++) {
+                color_C += letters[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.backgroundColor = color_C;
+        }
+        const popup = function () {
+            h = document.createElement('h1');
+            h.innerText = "Engineer Suraj Singh";
+            me.appendChild(h);
+        }
+        const rmpop = () => {
+            me.removeChild(h);
+        }
+        start.addEventListener('click', (e) => {
+            setInterval(popup, 2500);
+            setInterval(rmpop, 3000);
+        })
+        start.addEventListener('click', (e) => {
+            intervalId = setInterval(colorchanger, 1000);
+        });
+
+        stop.addEventListener('click', (e) => {
+            clearInterval(intervalId); // Clear the interval using the stored ID
+        });
+    </script>
+</body>
+
+</html>

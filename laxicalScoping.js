@@ -16,5 +16,11 @@
 }
 
 console.log(x);
-console.log(y);
-console.log(z);
+// console.log(y);
+// console.log(z);
+function myfun(){
+    let x=6;
+    var y = 0;
+    return x+y;
+}
+console.log(myfun());

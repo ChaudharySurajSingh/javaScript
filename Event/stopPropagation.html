@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop propagation and immidiateapropagation</title>
+</head>
+
+<body>
+    <div id="first">
+        <a href="">first</a>
+        <div id="second">
+            <a href="">second</a>
+            <div id="third">
+                <a href="">third</a>
+                <div id="main"><button>click me</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const button = document.querySelector('button');
+    button.addEventListener('click', (e) => {
+        window.alert('button clicked-1');
+        // e.stopImmediatePropagation();
+    },true);
+    button.addEventListener('click', (e) => {
+        window.alert('button clicked-2');
+    });
+    button.addEventListener('click', (e) => {
+        window.alert('button clicked-3');
+    });
+    document.querySelector('#third').addEventListener('click', (e) => {
+        window.alert('button clicked');
+        // e.stopPropagation();
+    });
+    document.querySelector('#main').addEventListener('click',(e)=>{
+        window.alert('button is clicked')
+    })
+</script>
+
+</htm

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dom Learning</title>
+    <style>
+        body{
+            background-color: #414141;
+            color :#fff
+        }
+    </style>
+</head>
+<body>
+  <div class="bg-black" id="div1">
+    <h1 id="title" class="heading" src="">Dom learning with suraj singh <span style="display: none;">i am hidden text</span></h1>
+    <p>Lorem ipsum dolors sit ammet</p>
+  </div>
+  <div class="second">
+    <ul class="myul">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+  </div>
+</body>
+<script>
+  addElement = (count)=>{
+    const element = document.querySelector('.myul')
+    let ele = document.createElement('li');
+    ele.innerHTML= count;
+    element.appendChild(ele)
+
+  }
+  addElement("suraj singh");
+  let optiItem = (item)=>{
+    let ele= document.createElement('li')
+    // ele.innerHTML= item;
+    ele.appendChild(document.createTextNode(item));
+    element = document.querySelector('.second');
+    element.appendChild(ele);
+
+  }
+  optiItem("ruchima chaudhary")
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hey this is random color changer</h1>
+    <br />
+    <h3>click the start button to see the magic and stop button to hold</h3>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+      let getRGB = () => {
+        let hex = "0123456789ABCDEF";
+        let color = "#";
+        for (i = 0; i < 6; i++) {
+          color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      };
+      let intervalId;
+      let startChangeBg = () => {
+        changeBg = () => {
+          document.body.style.backgroundColor = getRGB();
+        };
+        intervalId = setInterval(changeBg, 500);
+      };
+      let stopBg = () => {
+        clearInterval(intervalId), (intervalId = null);
+      };
+      document
+        .getElementById("start")
+        .addEventListener("mouseover", startChangeBg);
+      document.getElementById("stop").addEventListener("click", stopBg);
+    </script>
+  </body>
+</html>

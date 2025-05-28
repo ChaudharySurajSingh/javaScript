@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.cursorStyle": "line",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "editor.suggest.showStatusBar": true,
+    "debug.showInStatusBar": "always"
+}

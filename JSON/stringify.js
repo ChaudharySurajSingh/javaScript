@@ -32,5 +32,5 @@ console.log(JSON.parse(jsonString, (key, value) => {
     return value;
 }));
 //replacer as a array 
-let arrayString = JSON.stringify(object, ['name','skill',0,1]);
+let arrayString = JSON.stringify(object, ['name','skill']);
 console.log(arrayString);

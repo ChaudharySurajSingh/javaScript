@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="images" class="image">
+            <li><img src="istockphoto-1026448878-612x612.jpg" alt="image not found" id="image-1" height="200px"
+                    width="200px"></li>
+            <li><img src="istockphoto-1047259374-612x612.jpg" alt="image not found" id="image-2" height="200px"
+                    width="200px"></li>
+            <li><img src="istockphoto-1224500457-612x612.jpg" alt="image not found" id="image-3" height="200px"
+                    width="200px"></li>
+            <li><img src="istockphoto-1289411982-612x612.jpg" alt="image not found" id="image-4" height="200px"
+                    width="200px"></li>
+            <li><img src="istockphoto-1356364287-612x612.jpg" alt="image not found" id="image-5" height="200px"
+                    width="200px"></li>
+            <li><img src="istockphoto-1439425791-612x612.jpg" alt="image not found" id="image-6" height="200px"
+                    width="200px"></li>
+            <li><img src="istockphoto-511594166-612x612.jpg" alt="image not found" id="image-7" height="200px"
+                    width="200px"></li>
+            <li><img src="istockphoto-537331500-612x612.jpg" alt="image not found" id="image-8" height="200px"
+                    width="200px"></li>
+            <li id="google"><a style="color: whitesmoke;" href="http://www.google.com"> Google</a>
+        </ul>
+    </div>
+<div id="outer">
+        <button id="inner">Click me!</button>
+</div>
+
+</body>
+<script>
+//     document.getElementById('image-1').addEventListener('click',(e)=>{
+//         console.log(e);
+//         console.log(e.target);
+//         console.log(e.currentTarget);
+        
+//     })
+        document.getElementById("outer").addEventListener("click", function (e) {
+                console.log("Current Target:", e.currentTarget.id);
+                console.log("Target:", e.target.id);
+        });
+
+        document.getElementById("inner").addEventListener("click", function (e) {
+                console.log("Current Target (Inner):", e.currentTarget.id);
+                console.log("Target (Inner):", e.target.id);
+        });
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background color changer</title>
+</head>
+
+<body>
+    <button id="start">click me to see the magic</button>
+    <button id="stop">click me to stop the magic</button>
+</body>
+<script>
+    const start = document.getElementById('start');
+    const stop = document.getElementById('stop');
+
+    let intervalId;
+
+    const randomColor = () => {
+        let hex = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    
+    const colorchanger = () => {
+        const changecolor = () => {
+            document.body.style.backgroundColor = randomColor();
+        } 
+        intervalId = setInterval(changecolor, 1000);
+        
+    }
+    const stopcolor =()=>{
+        clearInterval(intervalId); 
+    }
+    start.addEventListener('click', colorchanger);
+    stop.addEventListener('click',stopcolor)
+</script>
+
+</html>
