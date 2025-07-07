@@ -1,5 +1,5 @@
 {
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
     "debug.javascript.autoAttachFilter": "disabled"
 }
