@@ -1,5 +1,6 @@
 {
     "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
-    "debug.javascript.autoAttachFilter": "disabled"
+    "debug.javascript.autoAttachFilter": "disabled",
+    "editor.mouseWheelZoom": true
 }
