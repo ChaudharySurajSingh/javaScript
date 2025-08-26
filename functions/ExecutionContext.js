@@ -41,7 +41,3 @@
 // console.log(count())
 // console.log(count())
 
-test()
-let test = function(){
-    console.log('hello there i am a function')
-}
