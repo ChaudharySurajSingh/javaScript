@@ -41,3 +41,5 @@
 // console.log(count())
 // console.log(count())
 
+console.log(window.a)
+let a = 90;
