@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.mouseWheelZoom": true,
+    "editor.padding.top": 0,
+    "terminal.explorerKind": "both"
+}
